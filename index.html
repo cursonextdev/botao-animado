@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão Animado</title>
+    <style>
+        /* Aqui está o estilo do botão */
+        button{
+            /* Largura */
+            width: 300px;
+            /* Preenchimento */
+            padding: 8px;
+            /* Cor de fundo */
+            background: #E0235C;
+            /* Cor da letra */	
+            color: #FFF;
+            /* Borda - tirar a padrão */
+            border: 0;
+            /* Borda arredondada */
+            border-radius: 50px;
+            /* Cursor do mouse como ponteiro */
+            cursor: pointer;
+            /* Animação */
+            animation: pulse 2s infinite;
+        }
+        
+        /* Aqui está a animação do botão */
+        @keyframes pulse{
+            0%{ box-shadow: 0 0 0 0  
+                rgba( 224, 35, 92, .5); }
+
+            70%{ box-shadow: 0 0 0 5px 
+                rgba( 224, 35, 92, 0); }
+
+            100%{ box-shadow: 0 0 0 0  
+                rgba( 224, 35, 92, 0); }	
+        }
+    </style>
+</head>
+<body>
+    <!-- Aqui está o código do botão -->
+    <button type="submit">
+		Next DEV
+    </button>
+</body>
+</html>
